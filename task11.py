@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
+
 try:
     # Открыть страницу http://suninjuly.github.io/file_input.html
     link = "http://suninjuly.github.io/file_input.html"

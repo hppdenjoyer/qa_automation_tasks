@@ -1,11 +1,11 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium import webdriver
 import time
 import math
 
 
 def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+    return str(math.log(abs(12 * math.sin(int(x)))))
 
 
 try:
@@ -40,8 +40,8 @@ try:
     button.click()
 
 finally:
-    # ожидание чтобы визуально оценить результаты прохождения скрипта
+    # Ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
-    # закрываем браузер после всех манипуляций
-    browser.quit()
-
+    # Закрываем браузер после всех манипуляций
+    if 'browser' in locals():  # Проверяем, что browser был создан
+        browser.quit()
