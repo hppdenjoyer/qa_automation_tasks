@@ -11,7 +11,7 @@ def calc(x):
 
 try:
     # Открыть страницу http://suninjuly.github.io/explicit_wait2.html
-    browser = webdriver.Firefox()
+    browser = webdriver.Chrome()
 
     browser.get("http://suninjuly.github.io/explicit_wait2.html")
 
@@ -40,6 +40,6 @@ try:
     button.click()
 
 finally:
-    time.sleep(30)
+    time.sleep(10)
     browser.quit()
 

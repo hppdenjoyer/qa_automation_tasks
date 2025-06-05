@@ -6,7 +6,7 @@ import unittest
 
 class TestRegistration(unittest.TestCase):
     def setUp(self):
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.Chrome()
 
     def test_registration1(self):
         self.browser.get("http://suninjuly.github.io/registration1.html")
